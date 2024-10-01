@@ -30,7 +30,7 @@ app.post("/items", (req, res) => {
 
 // 메인 페이지 요청 처리
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html")); // index.html은 친구의 메인 파일
+  res.sendFile(path.join(__dirname, "public", "30_simantic.html")); // index.html은 친구의 메인 파일
 });
 
 // 서버 실행
