@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>heyitsme</title>
+    <style>
+      * {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .header {
+        background-color: #f5b4cf;
+        text-align: center;
+        padding: 60px;
+      }
+
+      .nav {
+        display: flex;
+        flex-direction: row;
+        background-color: #494949;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+      }
+
+      .nav a {
+        color: #f0f0f0;
+        padding: 14px 22px;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      .nav a:hover {
+        cursor: pointer;
+        color: #f5b4cf;
+      }
+
+      .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .aside {
+        flex: 30%;
+        background-color: #f6cfdf;
+        padding: 20px;
+      }
+
+      .fakeimg {
+        width: 100%;
+        background-color: gray;
+        padding: 20px;
+      }
+
+      .main {
+        flex: 70%;
+        background-color: #f7eef1;
+        padding: 20px;
+      }
+
+      .footer {
+        background-color: #f5b4cf;
+        text-align: center;
+        padding: 10px;
+      }
+
+      @media screen and (max-width: 700px) {
+        .row,
+        .nav {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Who Am I</h1>
+    </header>
+    <nav class="nav">
+      <a href="">메뉴 1</a>
+      <a href="">메뉴 2</a>
+      <a href="">메뉴 3</a>
+      <a href="#project04">메뉴 4</a>
+      <a href="#project05">메뉴 5</a>
+      <a href="#project06">메뉴 6</a>
+    </nav>
+    <div class="row">
+      <aside class="aside">
+        <section class="introduce">
+          <h2>ABOUT</h2>
+          <div class="fakeimg" style="height: 200px">Image</div>
+          <p>
+            저는 58년생 개띠 김길랑입니다. 지금은 웹 페이지 만들고 있다구요!! 이
+            나이에 내가 이걸 해야 돼?
+          </p>
+          <br />
+          <h2>SKILLS</h2>
+          <p>
+            베짱이처럼 누워서 기타치기 3급, 농땡이치기 1급, 열심히 장난치기 2급
+          </p>
+          <div class="fakeimg" style="height: 60px">Image</div>
+          <br />
+          <div class="fakeimg" style="height: 60px">Image</div>
+          <br />
+          <div class="fakeimg" style="height: 60px">Image</div>
+        </section>
+      </aside>
+      <main class="main">
+        <section>
+          <h2>Project 01</h2>
+          <h5>2024.10</h5>
+          <div class="fakeimg" style="height: 200px">Image</div>
+          <p>저는 닭대가리입니다. 꼬끼오.</p>
+        </section>
+        <section>
+          <h2>Project 02</h2>
+          <h5>2024.10</h5>
+          <div class="fakeimg" style="height: 200px">Image</div>
+          <p>제 남친은 주식 공부하고 있어요.</p>
+        </section>
+        <section>
+          <h2>Project 03</h2>
+          <h5>2024.10</h5>
+          <div class="fakeimg" style="height: 200px">Image</div>
+          <p>저는 벼락부자가 될 겁니다.</p>
+        </section>
+        <section id="project04">
+          <h2>Project 04</h2>
+          <h5>2024.10</h5>
+          <div class="fakeimg" style="height: 200px">Image</div>
+          <p>떼돈 벌고 싶어요.</p>
+        </section>
+        <section id="project05">
+          <h2>Project 05</h2>
+          <h5>2024.10</h5>
+          <div class="fakeimg" style="height: 200px">Image</div>
+          <p>
+            돈으로 살 수 없는 행복은 없다. 당신이 행복하지 않은 이유는 돈이
+            없어서임 ㅇㅇ
+          </p>
+        </section>
+        <section id="project06">
+          <h2>Project 06</h2>
+          <h5>2024.10</h5>
+          <div class="fakeimg" style="height: 200px">Image</div>
+          <p>우하하.</p>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <h2>Copyright Gilrang 2024</h2>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GamJa</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .header {
+        background-color: #acdaff;
+        text-align: center;
+        padding: 60px;
+      }
+
+      .nav {
+        display: flex;
+        flex-direction: row;
+        background-color: aliceblue;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+      }
+
+      .nav a {
+        padding: 14px 20px;
+        text-align: center;
+        text-decoration: none;
+        color: #121212;
+      }
+
+      .nav a:hover {
+        background-color: #acdaff;
+        color: white;
+      }
+
+      .public {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .side {
+        flex: 30%;
+        background-color: #77c0fd;
+        padding: 20px;
+      }
+
+      .fakeimg {
+        background-color: gray;
+        width: 100%;
+        padding: 20px;
+      }
+
+      .main {
+        flex: 70%;
+        background-color: #d5e9f9;
+        padding: 20px;
+      }
+
+      .footer {
+        background-color: #acdaff;
+        text-align: center;
+        padding: 15px;
+      }
+
+      @media screen and (max-width: 720px) {
+        .public,
+        .nav {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1>I am James Jang Gamja</h1>
+    </header>
+    <nav class="nav">
+      <a href="">통감자</a>
+      <a href="">알감자</a>
+      <a href="">찐감자</a>
+      <a href="#project4">구운감자</a>
+      <a href="#project5">눈을감자</a>
+    </nav>
+    <div class="public">
+      <aside class="side">
+        <section>
+          <h2>ABOUT ME</h2>
+          <img src="/images.jpeg" alt="" />
+          <p>
+            저는 94년생 용인 감자입니다. 신선하고 맛이 좋답니다. 시장에서 인기가
+            많아요.
+          </p>
+          <h2>SKILLS</h2>
+          <p>다리 찢기 2급, 과자 야금야금 먹기 1급, 닭 챙기기 1급</p>
+          <div class="fakeimg" style="height: 60px">Image</div>
+          <br />
+          <div class="fakeimg" style="height: 60px">Image</div>
+          <br />
+          <div class="fakeimg" style="height: 60px">Image</div>
+        </section>
+      </aside>
+      <main class="main">
+        <section>
+          <h2>Project 01</h2>
+          <h5>24.10</h5>
+          <div class="fakeimg" style="height: 200px">Image</div>
+          <p>차근차근 돈을 모아서 5조 자산가가 될 제임스 장 감자입니다.</p>
+        </section>
+        <section>
+          <h2>Project 02</h2>
+          <h5>24.10</h5>
+          <div class="fakeimg" style="height: 200px">Image</div>
+          <p>
+            저는 요즘 주식 공부에 한창입니다. 투자가 무엇인지 제대로
+            보여드리겠습니다.
+          </p>
+        </section>
+        <section>
+          <h2>Project 03</h2>
+          <h5>24.10</h5>
+          <div class="fakeimg" style="height: 200px">Image</div>
+          <p>
+            현재 애완닭 한 마리를 키우고 있습니다. 아잇 벌써 모이 줄 시간이네요.
+          </p>
+        </section>
+        <section id="project4">
+          <h2>Project 04</h2>
+          <h5>24.10</h5>
+          <div class="fakeimg" style="height: 200px">Image</div>
+          <p>
+            축하받을 일이 생겼습니다. 그건 바로 제 발냄새가 사라졌다는
+            무지막지한 소식인데요. 길랑이가 아주 좋아합니다.
+          </p>
+        </section>
+        <section id="project5">
+          <h2>Project 05</h2>
+          <h5>24.10</h5>
+          <div class="fakeimg" style="height: 200px">Image</div>
+          <p>이만 전 스위스 여행 계획을 짜러 떠나볼게요. 안녕!</p>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <h2>Copyright Gilrang 2024</h2>
+    </footer>
+  </body>
+</html>
